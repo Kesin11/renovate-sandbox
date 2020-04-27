@@ -8,6 +8,7 @@
       {
         "extends": ["monorepo:aws-cdk"],
         "automerge": false,
+        "updateTypes": ["minor", "patch", "pin", "digest"],
         "groupName": "aws-cdk monorepo"
       },
       {
