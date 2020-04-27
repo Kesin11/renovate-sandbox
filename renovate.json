@@ -7,8 +7,7 @@
     "packageRules": [
       {
         "extends": ["monorepo:aws-cdk"],
-        "groupName": "aws-cdk monorepo",
-        "automerge": false
+        "groupName": "aws-cdk monorepo"
       },
       {
         "packageNames": ["@aws-sdk/client-auto-scaling-node"],
@@ -17,7 +16,7 @@
       {
         "extends": [":automergeMinor"],
         "depTypeList": ["devDependencies"],
-        "description": "automerge minor and patch devDependencies update",
+        "description": "automerge minor and patch devDependencies update"
       }
     ]
   },
