@@ -12,7 +12,7 @@
       },
       {
         "packageNames": ["@aws-sdk/client-auto-scaling-node"],
-        "automerge": false
+        "automerge": false,
         "description": "this is preview version of it and easy to be broken"
       }
     ]
