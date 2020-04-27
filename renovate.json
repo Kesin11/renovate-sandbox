@@ -3,15 +3,16 @@
   "masterIssue": true,
   "extends": ["config:base", ":label(renovate)", ":prHourlyLimitNone", ":prConcurrentLimit10", ":timezone(Asia/Tokyo)"],
   "npm": {
-    "extends": [":automergeMinor", ":unpublishSafe"],
+    "extends": [":automergeMinor", ":unpublishSafe", ":ignoreUnstable"],
     "packageRules": [
       {
-        "extends": "monorepo:aws-cdk",
+        "extends": ["monorepo:aws-cdk"],
+        "groupName": "aws-cdk monorepo",
         "automerge": false
       },
       {
+        "extends": [":automergeDisabled"],
         "packageNames": ["@aws-sdk/client-auto-scaling-node"],
-        "automerge": false,
         "description": "this is preview version of it and easy to be broken"
       }
     ]
